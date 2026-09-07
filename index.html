@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Video Page</title>
+<style>
+  body {
+    background: #111; color: #eee; font-family: system-ui, sans-serif;
+    max-width: 900px; margin: 0 auto; padding: 32px 16px;
+  }
+  h1 { text-align: center; margin-bottom: 8px; }
+  .player { margin: 32px 0; }
+  .player h2 { font-size: 1rem; color: #aaa; font-weight: 500; }
+  video { width: 100%; border-radius: 8px; background: #000; }
+  video::-webkit-media-controls-download-button { display: none !important; }
+  video::-internal-media-controls-download-button { display: none !important; }
+</style>
+</head>
+<body>
+<h1>Video Page</h1>
+    <section class="player">
+      <h2>Video 1</h2>
+      <video
+        controls
+        controlsList="nodownload noremoteplayback"
+        disablePictureInPicture
+        oncontextmenu="return false;"
+        preload="metadata"
+        playsinline
+      >
+        <source src="videos/video1.mp4" type="video/mp4" />
+        Your browser doesn't support embedded video.
+      </video>
+    </section>
+
+    <section class="player">
+      <h2>Video 2</h2>
+      <video
+        controls
+        controlsList="nodownload noremoteplayback"
+        disablePictureInPicture
+        oncontextmenu="return false;"
+        preload="metadata"
+        playsinline
+      >
+        <source src="videos/video2.mp4" type="video/mp4" />
+        Your browser doesn't support embedded video.
+      </video>
+    </section>
+
+</body>
+</html>
